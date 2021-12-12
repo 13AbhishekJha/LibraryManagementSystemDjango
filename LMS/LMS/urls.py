@@ -25,6 +25,5 @@ admin.site.site_header='Admin Dashboard'
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('student/',include('student.urls')),
-]
-    # path('',include('library.urls')),
-# ]+static(settings.STATIC_URL,document_root=settings.STATIC_ROOT)+static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)
+    path('',include('library.urls')),
+]+static(settings.STATIC_URL,document_root=settings.STATIC_ROOT)+static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)
